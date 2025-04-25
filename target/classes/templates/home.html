@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/home.js"></script>
+</head>
+<div id="note-modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>New Note</h2>
+        <input type="text" id="note-title" placeholder="Title">
+        <textarea id="note-content" placeholder="Content"></textarea>
+        <div class="modal-actions">
+            <button id="save-note">Save</button>
+            <button id="cancel-note">Cancel</button>
+        </div>
+    </div>
+</div>
+<body>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <div class="logo">MyNotes</div>
+            
+            <div class="user-menu">
+                <span style="color: #b5cd60;" id="whoami">User</span>
+            </div>
+
+            <div>
+                <button style="color: #b5cd60; background-color: transparent; border: none; margin:8px; font-size:16px; cursor: pointer;" onclick="logout()">Logout</button>
+            </div>
+        </header>
+
+        <!-- Notes Grid -->
+        <div class="notes-container">
+            <!-- Note 1 -->
+            <div class="note">
+                <h3 class="note-title">Shopping List</h3>
+                <p class="note-content">Milk, Eggs, Bread, Apples, Coffee</p>
+                <div class="note-footer">
+                    <span class="note-date">Today, 10:30 AM</span>
+                </div>
+            </div>
+
+            <!-- Note 2 -->
+            <div class="note">
+                <h3 class="note-title">Project Ideas</h3>
+                <p class="note-content">- Note taking app\n- Weather dashboard\n- Recipe organizer</p>
+                <div class="note-footer">
+                    <span class="note-date">Yesterday</span>
+                </div>
+            </div>
+
+            <!-- Note 3 -->
+            <div class="note">
+                <h3 class="note-title">Meeting Notes</h3>
+                <p class="note-content">Discuss new features\nReview timeline\nAssign tasks</p>
+                <div class="note-footer">
+                    <span class="note-date">Mar 15</span>
+                </div>
+            </div>
+
+            <!-- Note 4 -->
+            <div class="note">
+                <h3 class="note-title">Books to Read</h3>
+                <p class="note-content">1. Atomic Habits\n2. Deep Work\n3. Clean Code</p>
+                <div class="note-footer">
+                    <span class="note-date">Mar 10</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Note Button -->
+        <button class="create-note">+</button>
+    </div>
+</body>
+</html>
